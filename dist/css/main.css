@@ -5255,9 +5255,12 @@ html, body {
   height: 350px;
   background-color: #f5f7fa;
   margin-top: 100px; }
-  @media screen and (max-width: 899px) {
+  @media screen and (max-width: 744px) {
     .se-banner {
-      margin-top: 200px; } }
+      margin-top: 80px; } }
+  @media screen and (max-width: 534px) {
+    .se-banner {
+      margin-top: 165px; } }
   .se-banner.se-banner-calendar {
     height: auto;
     background-color: transparent; }
