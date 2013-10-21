@@ -4967,18 +4967,33 @@ html, body {
     background-color: #48cfad; }
   .md-post-item-b-left.orange {
     background-color: #fc6e51; }
+  @media screen and (max-width: 921px) {
+    .md-post-item-b-left {
+      width: 100%;
+      float: none; }
+      .md-post-item-b-left .md-post-item-b-center-block {
+        float: none; } }
 
 .md-post-item-b-right {
   width: 50%;
   float: right; }
   .md-post-item-b-right .md-post-item-b-center-block {
     float: left; }
+  @media screen and (max-width: 921px) {
+    .md-post-item-b-right {
+      width: 100%;
+      float: none; } }
 
 .md-post-item-b-center-block {
   width: 480px;
   padding: 20px; }
   .md-post-item-b-center-block img {
     max-width: 440px; }
+  @media screen and (max-width: 479px) {
+    .md-post-item-b-center-block {
+      width: 100%; }
+      .md-post-item-b-center-block img {
+        max-width: 100%; } }
 
 .md-post-item-b-full-center-block {
   width: 660px;
@@ -4988,11 +5003,17 @@ html, body {
   .md-post-item-b-full-center-block .md-post-item-b-cb-title {
     font-size: 24px;
     margin-bottom: 20px; }
+  @media screen and (max-width: 921px) {
+    .md-post-item-b-full-center-block {
+      width: 100%; } }
 
 .md-post-item-b-cb-location, .md-post-item-b-cb-event-date, .md-post-item-b-cb-event-date-location {
   width: 440px;
   height: 300px;
   position: relative; }
+  @media screen and (max-width: 921px) {
+    .md-post-item-b-cb-location, .md-post-item-b-cb-event-date, .md-post-item-b-cb-event-date-location {
+      width: 100%; } }
 
 .md-post-item-b-cb-event-date, .md-post-item-b-cb-event-date-location {
   background-color: #FFF; }
@@ -5381,6 +5402,9 @@ html, body {
   height: 40px;
   line-height: 40px;
   text-align: center; }
+  @media screen and (max-width: 479px) {
+    .se-footer-copyright {
+      font-size: 11px; } }
 
 .se-calendar-jumbo table {
   width: 960px;

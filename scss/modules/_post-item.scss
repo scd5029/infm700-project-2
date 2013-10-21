@@ -1,3 +1,8 @@
+$desktopWidth: 922px;
+$smallWidth: 480px;
+
+
+// --- Container ---
 .md-post-item {
 
 }
@@ -29,6 +34,14 @@
   &.blue { background-color: $blue; }
   &.mint { background-color: $mint; }
   &.orange { background-color: $orange; }
+
+  @media screen and (max-width: $desktopWidth - 1px) {
+    width: 100%;
+    float: none;
+    .md-post-item-b-center-block {
+      float: none;
+    }
+  }
 }
 
 .md-post-item-b-right {
@@ -36,6 +49,11 @@
   float: right;
   .md-post-item-b-center-block {
     float: left;
+  }
+
+  @media screen and (max-width: $desktopWidth - 1px) {
+    width: 100%;
+    float: none;
   }
 }
 
@@ -49,6 +67,13 @@ $fullCenterBlockWidth: 960px;
 
   img {
     max-width: $fullCenterBlockWidth / 2 - 20px * 2;
+  }
+
+  @media screen and (max-width: $smallWidth - 1px) {
+    width: 100%;
+    img {
+      max-width: 100%;
+    }
   }
 }
 
@@ -66,6 +91,10 @@ $fullCenterBlockWidth: 960px;
   }
   .md-post-item-b-cb-excerpt {
   }
+
+  @media screen and (max-width: $desktopWidth - 1px) {
+    width: 100%;
+  }
 }
 
 
@@ -76,6 +105,9 @@ $postItemInnerHeight: 300px;
   width: 440px;
   height: $postItemInnerHeight;
   position: relative;
+  @media screen and (max-width: $desktopWidth - 1px) {
+    width: 100%;
+  }
 }
 
 .md-post-item-b-cb-event-date {
