@@ -91,3 +91,5 @@
 
 
 <?php require "partials/_foot.php" ?>
+<?php require "partials/_scripts.php" ?>
+<?php require "partials/_end.php" ?>

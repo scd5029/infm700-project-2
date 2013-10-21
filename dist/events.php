@@ -118,4 +118,7 @@
 
 <div class="se-footer-copyright">Copyright © 2013 Friends of Patterson Park. All Rights Reserved.</div>
 
+
 <?php require "partials/_foot.php" ?>
+<?php require "partials/_scripts.php" ?>
+<?php require "partials/_end.php" ?>
