@@ -1,6 +1,8 @@
 // --- Navbar ---
 $fullHeight: 100px;
 $maxMenuWidth: 899px;
+$smallMenuWidth: 744px;
+$mobileMenuWidth: 534px;
 
 .se-navbar {
   position     : fixed;
@@ -13,24 +15,47 @@ $maxMenuWidth: 899px;
   border-bottom: 1px solid $gray4;
   box-shadow   : 0 1px 3px rgba(#000, .3);
 
-  @media screen and (max-width: $maxMenuWidth) {
-    height: $fullHeight * 2;
+  @media screen and (max-width: $smallMenuWidth) {
+    height: 80px;
+  }
+
+  @media screen and (max-width: $mobileMenuWidth) {
+    height: auto;
   }
 }
 
 
 // --- Level 1 ---
-.se-navbar-brand {
-  float      : left;
-  color      : $greenDark;
-  margin-left: 20px;
-  height     : $fullHeight;
+.se-navbar-brand-logo {
+  display: block;
+  float: left;
+  height: 100%;
+  margin-right: -10px;
   img {
     height: 100%;
   }
+
+  @media screen and (max-width: $smallMenuWidth) {
+    margin-right: 0;
+  }
+
+  @media screen and (max-width: $mobileMenuWidth) {
+    height: 40px;
+  }
+}
+
+
+.se-navbar-brand {
+  float : left;
+  color : $greenDark;
+  height: $fullHeight;
   &:hover {
     text-decoration: none;
     color          : $greenDark;
+  }
+
+  @media screen and (max-width: $smallMenuWidth) {
+    height: 40px;
   }
 }
 
@@ -45,18 +70,26 @@ $menuHeight: $fullHeight / 2 - 10px;
   height      : $menuHeight;
   margin-top  : 5px;
   margin-right: 10px;
-  @media screen and (max-width: $maxMenuWidth) {
+
+  @media screen and (max-width: $smallMenuWidth) {
+    height: 40px;
     float: left;
+    margin: 0;
+  }
+
+  @media screen and (max-width: $mobileMenuWidth) {
+    float: none;
+    height: auto;
     clear: both;
-    margin-left: 20px;
   }
 }
 
 .se-navbar-lower-menu {
   @extend .se-navbar-menu;
   clear: right;
-  @media screen and (max-width: $maxMenuWidth) {
-    clear: both;
+
+  @media screen and (max-width: $smallMenuWidth) {
+    display: none;
   }
 }
 
@@ -89,6 +122,18 @@ $menuHeight: $fullHeight / 2 - 10px;
       border-radius   : 2px;
     }
   }
+
+  @media screen and (max-width: $maxMenuWidth) {
+    font-size: 14px;
+    margin-right: 0;
+  }
+
+  @media screen and (max-width: $mobileMenuWidth) {
+    float: none;
+    a {
+      display: block;
+    }
+  }
 }
 
 .se-navbar-lm-button {
@@ -108,10 +153,30 @@ $menuHeight: $fullHeight / 2 - 10px;
   font-size: 22px;
   line-height: 1.4;
   margin-top: 20px;
+
+  @media screen and (max-width: $maxMenuWidth) {
+    font-size: 16px;
+  }
+
+  @media screen and (max-width: $smallMenuWidth) {
+    height: 40px;
+    line-height: 40px;
+    margin-top: 0;
+    width: 100%;
+    margin-left: 10px;
+  }
 }
 
 .se-navbar-b-t-sub-title {
   margin-top: 5px;
   font-size: 18px;
   font-style: italic;
+
+  @media screen and (max-width: $maxMenuWidth) {
+    font-size: 14px;
+  }
+
+  @media screen and (max-width: $smallMenuWidth) {
+    display: none;
+  }
 }
