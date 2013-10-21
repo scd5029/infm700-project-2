@@ -5053,6 +5053,45 @@ html, body {
     .se-navbar {
       height: auto; } }
 
+.se-navbar.se-navbar-short {
+  height: 51px; }
+  .se-navbar.se-navbar-short .se-navbar-b-t-name {
+    line-height: 50px;
+    margin-top: 0;
+    margin-left: 10px; }
+  .se-navbar.se-navbar-short .se-navbar-b-t-sub-title {
+    display: none; }
+  .se-navbar.se-navbar-short .se-navbar-lower-menu {
+    display: none; }
+  @media screen and (max-width: 744px) {
+    .se-navbar.se-navbar-short {
+      height: 40px; }
+      .se-navbar.se-navbar-short .se-navbar-b-t-name {
+        line-height: 40px; }
+      .se-navbar.se-navbar-short .se-navbar-menu, .se-navbar.se-navbar-short .se-navbar-lower-menu {
+        display: none; }
+      .se-navbar.se-navbar-short .se-navbar-show-menu {
+        display: block;
+        float: right;
+        line-height: 40px;
+        margin-right: 10px; }
+      .se-navbar.se-navbar-short.se-navbar-short-show {
+        height: 80px; }
+        .se-navbar.se-navbar-short.se-navbar-short-show .se-navbar-menu, .se-navbar.se-navbar-short.se-navbar-short-show .se-navbar-lower-menu {
+          display: block; }
+        .se-navbar.se-navbar-short.se-navbar-short-show .se-navbar-lower-menu {
+          display: none; } }
+  @media screen and (max-width: 534px) {
+    .se-navbar.se-navbar-short.se-navbar-short-show {
+      height: auto; }
+      .se-navbar.se-navbar-short.se-navbar-short-show .se-navbar-menu, .se-navbar.se-navbar-short.se-navbar-short-show .se-navbar-lower-menu {
+        display: block; }
+      .se-navbar.se-navbar-short.se-navbar-short-show .se-navbar-lower-menu {
+        display: none; } }
+
+.se-navbar-show-menu {
+  display: none; }
+
 .se-navbar-brand-logo {
   display: block;
   float: left;

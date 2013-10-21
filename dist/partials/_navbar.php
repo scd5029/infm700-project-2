@@ -1,5 +1,5 @@
 <!-- Navbar -->
-<div class="se-navbar">
+<div class="se-navbar" id="se-navbar">
   <a href="index.php" class="se-navbar-brand-logo">
     <img src="img/brand_logo.gif" alt="">
   </a>
@@ -10,6 +10,8 @@
       <p class="se-navbar-b-t-sub-title">Baltimore’s Best Backyard!</p>
     </div>
   </a>
+
+  <a href="#" class="se-navbar-show-menu" id="se-navbar-show-menu">Menu</a>
 
   <ul class="se-navbar-menu">
     <li class="se-navbar-m-button">

@@ -24,8 +24,69 @@ $mobileMenuWidth: 534px;
   }
 }
 
+.se-navbar.se-navbar-short {
+  height: $fullHeight / 2 + 1px;
+  .se-navbar-b-t-name {
+    line-height: 50px;
+    margin-top: 0;
+    margin-left: 10px;
+  }
+  .se-navbar-b-t-sub-title {
+    display: none;
+  }
+  .se-navbar-lower-menu {
+    display: none;
+  }
+
+  @media screen and (max-width: $smallMenuWidth) {
+    height: 40px;
+    .se-navbar-b-t-name {
+      line-height: 40px;
+    }
+
+    .se-navbar-menu {
+      display: none;
+    }
+
+    .se-navbar-show-menu {
+      display: block;
+      float: right;
+      line-height: 40px;
+      margin-right: 10px;
+    }
+
+    // Show Menu
+    &.se-navbar-short-show {
+      height: 80px;
+      .se-navbar-menu {
+        display: block;
+      }
+      .se-navbar-lower-menu {
+        display: none;
+      }
+    }
+  }
+
+  @media screen and (max-width: $mobileMenuWidth) {
+    // Show Menu
+    &.se-navbar-short-show {
+      height: auto;
+      .se-navbar-menu {
+        display: block;
+      }
+      .se-navbar-lower-menu {
+        display: none;
+      }
+    }
+  }
+}
+
 
 // --- Level 1 ---
+.se-navbar-show-menu {
+  display: none;
+}
+
 .se-navbar-brand-logo {
   display: block;
   float: left;
