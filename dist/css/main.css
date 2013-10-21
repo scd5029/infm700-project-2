@@ -5205,6 +5205,31 @@ html, body {
     .se-navbar-b-t-sub-title {
       display: none; } }
 
+.se-navbar-m-drop-down {
+  display: none;
+  position: absolute;
+  top: 90%;
+  right: 0;
+  list-style: none;
+  background-color: #FFF;
+  padding: 0;
+  margin: 0;
+  border: 1px solid #aab2bd; }
+
+.se-navbar-m-dd-button a {
+  display: block;
+  height: 34px;
+  white-space: nowrap;
+  overflow: hidden; }
+  .se-navbar-m-dd-button a:hover {
+    border-radius: 0; }
+
+.se-navbar-m-button {
+  position: relative; }
+  @media screen and (min-width: 744px) {
+    .se-navbar-m-button:hover .se-navbar-m-drop-down {
+      display: block; } }
+
 .se-banner {
   height: 350px;
   background-color: #f5f7fa;

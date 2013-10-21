@@ -241,3 +241,42 @@ $menuHeight: $fullHeight / 2 - 10px;
     display: none;
   }
 }
+
+
+// --- Drop Down ---
+.se-navbar-m-drop-down {
+  display: none;
+  position: absolute;
+  top: 90%;
+  right: 0;
+  list-style: none;
+  background-color: #FFF;
+  padding: 0;
+  margin: 0;
+  border: 1px solid $gray4;
+}
+
+.se-navbar-m-dd-button {
+  a {
+    display: block;
+    height: 34px;
+    white-space: nowrap;
+    overflow: hidden;
+    &:hover {
+      border-radius: 0;
+    }
+  }
+}
+
+.se-navbar-m-button {
+  position: relative;
+
+  @media screen and (min-width: $smallMenuWidth) {
+    &:hover {
+      .se-navbar-m-drop-down {
+        display: block;
+      }
+    }
+  }
+}
+
