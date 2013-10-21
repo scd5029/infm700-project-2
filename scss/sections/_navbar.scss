@@ -1,0 +1,117 @@
+// --- Navbar ---
+$fullHeight: 100px;
+$maxMenuWidth: 899px;
+
+.se-navbar {
+  position     : fixed;
+  z-index      : 1000;
+  top          : 0;
+  left         : 0;
+  width        : 100%;
+  height       : $fullHeight + 1px;
+  background   : #FFF;
+  border-bottom: 1px solid $gray4;
+  box-shadow   : 0 1px 3px rgba(#000, .3);
+
+  @media screen and (max-width: $maxMenuWidth) {
+    height: $fullHeight * 2;
+  }
+}
+
+
+// --- Level 1 ---
+.se-navbar-brand {
+  float      : left;
+  color      : $greenDark;
+  margin-left: 20px;
+  height     : $fullHeight;
+  img {
+    height: 100%;
+  }
+  &:hover {
+    text-decoration: none;
+    color          : $greenDark;
+  }
+}
+
+
+$menuHeight: $fullHeight / 2 - 10px;
+
+.se-navbar-menu {
+  list-style  : none;
+  float       : right;
+  padding     : 0;
+  margin      : 0;
+  height      : $menuHeight;
+  margin-top  : 5px;
+  margin-right: 10px;
+  @media screen and (max-width: $maxMenuWidth) {
+    float: left;
+    clear: both;
+    margin-left: 20px;
+  }
+}
+
+.se-navbar-lower-menu {
+  @extend .se-navbar-menu;
+  clear: right;
+  @media screen and (max-width: $maxMenuWidth) {
+    clear: both;
+  }
+}
+
+
+// --- Level 2 ---
+.se-navbar-b-logo {
+  float: left;
+  display: block;
+}
+
+.se-navbar-b-title {
+  float: left;
+}
+
+.se-navbar-m-button {
+  float       : left;
+  font-size   : 16px;
+  margin-right: 10px;
+  line-height : $menuHeight;
+
+  a {
+    display    : inline-block;
+    padding    : 6px 10px;
+    line-height: 1.4;
+    color      : $gray6;
+    &:hover {
+      text-decoration : none;
+      background-color: $blueDark;
+      color           : #FFF;
+      border-radius   : 2px;
+    }
+  }
+}
+
+.se-navbar-lm-button {
+  float       : left;
+  margin-right: 10px;
+  line-height : $menuHeight;
+
+  a {
+    @extend .btn;
+    @extend .btn-success;
+  }
+}
+
+
+// --- Level 3 ---
+.se-navbar-b-t-name {
+  font-size: 22px;
+  line-height: 1.4;
+  margin-top: 20px;
+}
+
+.se-navbar-b-t-sub-title {
+  margin-top: 5px;
+  font-size: 18px;
+  font-style: italic;
+}
