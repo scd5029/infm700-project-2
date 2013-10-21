@@ -4967,18 +4967,33 @@ html, body {
     background-color: #48cfad; }
   .md-post-item-b-left.orange {
     background-color: #fc6e51; }
+  @media screen and (max-width: 921px) {
+    .md-post-item-b-left {
+      width: 100%;
+      float: none; }
+      .md-post-item-b-left .md-post-item-b-center-block {
+        float: none; } }
 
 .md-post-item-b-right {
   width: 50%;
   float: right; }
   .md-post-item-b-right .md-post-item-b-center-block {
     float: left; }
+  @media screen and (max-width: 921px) {
+    .md-post-item-b-right {
+      width: 100%;
+      float: none; } }
 
 .md-post-item-b-center-block {
   width: 480px;
   padding: 20px; }
   .md-post-item-b-center-block img {
     max-width: 440px; }
+  @media screen and (max-width: 479px) {
+    .md-post-item-b-center-block {
+      width: 100%; }
+      .md-post-item-b-center-block img {
+        max-width: 100%; } }
 
 .md-post-item-b-full-center-block {
   width: 660px;
@@ -4988,11 +5003,17 @@ html, body {
   .md-post-item-b-full-center-block .md-post-item-b-cb-title {
     font-size: 24px;
     margin-bottom: 20px; }
+  @media screen and (max-width: 921px) {
+    .md-post-item-b-full-center-block {
+      width: 100%; } }
 
 .md-post-item-b-cb-location, .md-post-item-b-cb-event-date, .md-post-item-b-cb-event-date-location {
   width: 440px;
   height: 300px;
   position: relative; }
+  @media screen and (max-width: 921px) {
+    .md-post-item-b-cb-location, .md-post-item-b-cb-event-date, .md-post-item-b-cb-event-date-location {
+      width: 100%; } }
 
 .md-post-item-b-cb-event-date, .md-post-item-b-cb-event-date-location {
   background-color: #FFF; }
@@ -5234,9 +5255,12 @@ html, body {
   height: 350px;
   background-color: #f5f7fa;
   margin-top: 100px; }
-  @media screen and (max-width: 899px) {
+  @media screen and (max-width: 744px) {
     .se-banner {
-      margin-top: 200px; } }
+      margin-top: 80px; } }
+  @media screen and (max-width: 534px) {
+    .se-banner {
+      margin-top: 165px; } }
   .se-banner.se-banner-calendar {
     height: auto;
     background-color: transparent; }
@@ -5281,12 +5305,18 @@ html, body {
 .se-map-block {
   width: 100%;
   position: relative; }
+  @media screen and (max-width: 991px) {
+    .se-map-block {
+      height: 400px; } }
 
 .se-map-block-canvas {
   position: relative;
   height: 350px;
   width: 100%;
   overflow: hidden; }
+  @media screen and (max-width: 991px) {
+    .se-map-block-canvas {
+      height: 200px; } }
 
 .se-map-block-detail {
   position: absolute;
@@ -5295,11 +5325,21 @@ html, body {
   bottom: 0;
   right: 0;
   background-color: transparent; }
+  @media screen and (max-width: 991px) {
+    .se-map-block-detail {
+      height: 400px;
+      bottom: auto; } }
 
 .se-map-block-d-container {
   width: 50%;
   margin-left: 50%;
   height: 100%; }
+  @media screen and (max-width: 991px) {
+    .se-map-block-d-container {
+      width: 100%;
+      margin-left: 0;
+      margin-top: 200px;
+      height: 200px; } }
 
 .se-map-block-d-inner {
   width: 400px;
@@ -5308,15 +5348,27 @@ html, body {
   margin-left: 30px;
   background-color: #FFF;
   padding: 20px; }
+  @media screen and (max-width: 991px) {
+    .se-map-block-d-inner {
+      width: 100%;
+      height: 200px;
+      margin: 0; } }
 
 .se-map-block-d-i-header {
   font-size: 22px;
   font-weight: 300;
   margin-bottom: 20px; }
+  @media screen and (max-width: 991px) {
+    .se-map-block-d-i-header {
+      font-size: 18px;
+      margin-bottom: 10px; } }
 
 .se-map-block-d-i-address {
   font-size: 22px;
   font-weight: 300; }
+  @media screen and (max-width: 991px) {
+    .se-map-block-d-i-address {
+      font-size: 18px; } }
 
 .se-map-block-d-i-get-direction {
   font-size: 16px;
@@ -5353,6 +5405,9 @@ html, body {
   height: 40px;
   line-height: 40px;
   text-align: center; }
+  @media screen and (max-width: 479px) {
+    .se-footer-copyright {
+      font-size: 11px; } }
 
 .se-calendar-jumbo table {
   width: 960px;
