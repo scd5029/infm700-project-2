@@ -5053,6 +5053,45 @@ html, body {
     .se-navbar {
       height: auto; } }
 
+.se-navbar.se-navbar-short {
+  height: 51px; }
+  .se-navbar.se-navbar-short .se-navbar-b-t-name {
+    line-height: 50px;
+    margin-top: 0;
+    margin-left: 10px; }
+  .se-navbar.se-navbar-short .se-navbar-b-t-sub-title {
+    display: none; }
+  .se-navbar.se-navbar-short .se-navbar-lower-menu {
+    display: none; }
+  @media screen and (max-width: 744px) {
+    .se-navbar.se-navbar-short {
+      height: 40px; }
+      .se-navbar.se-navbar-short .se-navbar-b-t-name {
+        line-height: 40px; }
+      .se-navbar.se-navbar-short .se-navbar-menu, .se-navbar.se-navbar-short .se-navbar-lower-menu {
+        display: none; }
+      .se-navbar.se-navbar-short .se-navbar-show-menu {
+        display: block;
+        float: right;
+        line-height: 40px;
+        margin-right: 10px; }
+      .se-navbar.se-navbar-short.se-navbar-short-show {
+        height: 80px; }
+        .se-navbar.se-navbar-short.se-navbar-short-show .se-navbar-menu, .se-navbar.se-navbar-short.se-navbar-short-show .se-navbar-lower-menu {
+          display: block; }
+        .se-navbar.se-navbar-short.se-navbar-short-show .se-navbar-lower-menu {
+          display: none; } }
+  @media screen and (max-width: 534px) {
+    .se-navbar.se-navbar-short.se-navbar-short-show {
+      height: auto; }
+      .se-navbar.se-navbar-short.se-navbar-short-show .se-navbar-menu, .se-navbar.se-navbar-short.se-navbar-short-show .se-navbar-lower-menu {
+        display: block; }
+      .se-navbar.se-navbar-short.se-navbar-short-show .se-navbar-lower-menu {
+        display: none; } }
+
+.se-navbar-show-menu {
+  display: none; }
+
 .se-navbar-brand-logo {
   display: block;
   float: left;
@@ -5165,6 +5204,31 @@ html, body {
   @media screen and (max-width: 744px) {
     .se-navbar-b-t-sub-title {
       display: none; } }
+
+.se-navbar-m-drop-down {
+  display: none;
+  position: absolute;
+  top: 90%;
+  right: 0;
+  list-style: none;
+  background-color: #FFF;
+  padding: 0;
+  margin: 0;
+  border: 1px solid #aab2bd; }
+
+.se-navbar-m-dd-button a {
+  display: block;
+  height: 34px;
+  white-space: nowrap;
+  overflow: hidden; }
+  .se-navbar-m-dd-button a:hover {
+    border-radius: 0; }
+
+.se-navbar-m-button {
+  position: relative; }
+  @media screen and (min-width: 744px) {
+    .se-navbar-m-button:hover .se-navbar-m-drop-down {
+      display: block; } }
 
 .se-banner {
   height: 350px;

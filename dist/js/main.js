@@ -54,4 +54,19 @@
     content: 'It shows a brief detail of the events'
   })
 
+
+  // Navbar Scroll Hide
+  $(document).on('scroll', function() {
+    if ( $(document).scrollTop() > 200 ) {
+      $('#se-navbar').addClass('se-navbar-short');
+    } else {
+      $('#se-navbar').removeClass('se-navbar-short se-navbar-short-show');
+    }
+  })
+
+  $('#se-navbar-show-menu').on('click', function() {
+    $('#se-navbar').toggleClass('se-navbar-short-show');
+    return false;
+  })
+
 })(window, window.jQuery);
