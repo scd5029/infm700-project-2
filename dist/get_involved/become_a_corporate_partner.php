@@ -1,9 +1,9 @@
-<?php require "partials/_head.php" ?>
-<?php require "partials/_navbar.php" ?>
+<?php require "../_partials/_head.php" ?>
+<?php require "../_partials/_navbar.php" ?>
 
 
 <!-- Banner -->
-<div class="se-banner se-banner-picture" style="background: url('img/corporate-partner-1.jpg'); background-size: cover;">
+<div class="se-banner se-banner-picture" style="background: url('/_img/corporate-partner-1.jpg'); background-size: cover;">
   <div class="se-banner-p-inner">
     <div class="se-banner-p-i-caption">
       <h2 class="se-banner-p-i-c-title">Become our Corporate Partner</h2>
@@ -50,7 +50,7 @@
 				</div>
 				<div class="panel-body">
 					<div class = "col-lg-6">
-						<img src = "img/charmcityfitness.jpg" class = "img-responsive" alt = "Charm City Fitness">
+						<img src = "/_img/charmcityfitness.jpg" class = "img-responsive" alt = "Charm City Fitness">
 					</div>
 					<div class="col-lg-6">
 					  "At Charm City Fitness, we believe in the importance of staying active in lead a happy and healthy life.  The Friends of Patterson Park share our vision for an active Baltimore and work tirelessly to make sure Patterson Park is ready for any physical activity from Zumba in the summer and serving water to runners during the Baltimore Running Festival.  We are proud to be corporate members of the Friends of Patterson Park." - <a href = "http://citysweat.com/home/">Charm City Fitness</a>
@@ -160,6 +160,6 @@
 
 
 
-<?php require "partials/_foot.php" ?>
-<?php require "partials/_scripts.php" ?>
-<?php require "partials/_end.php" ?>
+<?php require "../_partials/_foot.php" ?>
+<?php require "../_partials/_scripts.php" ?>
+<?php require "../_partials/_end.php" ?>

@@ -1,5 +1,5 @@
-<?php require "partials/_head.php" ?>
-<?php require "partials/_navbar.php" ?>
+<?php require "../_partials/_head.php" ?>
+<?php require "../_partials/_navbar.php" ?>
 
 
 <!-- Main jumbotron for a primary marketing message or call to action -->
@@ -74,7 +74,7 @@
             </ul>
           </div>
           <div class="col-lg-4">
-            <img src="img/soccer.jpg" alt="Child Playing Soccer" title="Child Playing Soccer" class="img-responsive-centered">
+            <img src="/_img/soccer.jpg" alt="Child Playing Soccer" title="Child Playing Soccer" class="img-responsive-centered">
           </div>
         </div>
       </div>
@@ -92,7 +92,7 @@
             </ul>
           </div>
           <div class="col-lg-8">
-            <img src="img/communityFriend.jpg" alt="Patterson Park Aerial View" title="Patterson Park Aerial View" class="img-responsive-centered">
+            <img src="/_img/communityFriend.jpg" alt="Patterson Park Aerial View" title="Patterson Park Aerial View" class="img-responsive-centered">
           </div>
         </div>
       </div>
@@ -108,7 +108,7 @@
             </ul>
           </div>
           <div class="col-lg-8">
-            <img src="img/nature.jpg" alt="Children Experiencing Nature" title="Children Experiencing Nature" class="img-responsive-centered">
+            <img src="/_img/nature.jpg" alt="Children Experiencing Nature" title="Children Experiencing Nature" class="img-responsive-centered">
           </div>
         </div>
       </div>
@@ -117,8 +117,8 @@
 </div>
 
 
-<?php require "partials/_foot.php" ?>
-<?php require "partials/_scripts.php" ?>
+<?php require "../_partials/_foot.php" ?>
+<?php require "../_partials/_scripts.php" ?>
 
 <script type="text/javascript">
 $(document).ready(function(){
@@ -155,4 +155,4 @@ $(document).ready(function(){
 });
 </script>
 
-<?php require "partials/_end.php" ?>
+<?php require "../_partials/_end.php" ?>

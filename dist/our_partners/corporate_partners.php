@@ -1,5 +1,5 @@
-<?php require "partials/_head.php" ?>
-<?php require "partials/_navbar.php" ?>
+<?php require "../_partials/_head.php" ?>
+<?php require "../_partials/_navbar.php" ?>
 
 
 
@@ -33,7 +33,7 @@
 			<div class="row">
 				<div class="col-md-12">
 					<h2>Gold Pagoda Corporate Friends: $15,000+</h2>
-					<p><a href="http://www.allegisgroup.com/"><img src="img/allegis.gif" alt="Allegis Group" class="img-responsive"></a></p>
+					<p><a href="http://www.allegisgroup.com/"><img src="/_img/allegis.gif" alt="Allegis Group" class="img-responsive"></a></p>
 				</div>
 			</div>
 
@@ -41,8 +41,8 @@
 			<div class="row">
 				<div class="col-md-12">
 					<h2>Silver Fountain Corporate Friends: $5,000+</h2>
-					<p><a href="http://carefirst.com/"><img src="img/carefirst.jpg" alt="CareFirst" class="img-responsive"></a></p>
-					<p><a href="http://101ellwood.prospectportal.com/"><img src="img/101ellwood.jpg" alt="101 Ellwood Modern Apartments & Lofts" class="img-responsive"></a></p>
+					<p><a href="http://carefirst.com/"><img src="/_img/carefirst.jpg" alt="CareFirst" class="img-responsive"></a></p>
+					<p><a href="http://101ellwood.prospectportal.com/"><img src="/_img/101ellwood.jpg" alt="101 Ellwood Modern Apartments & Lofts" class="img-responsive"></a></p>
 				</div>
 			</div>
 
@@ -50,13 +50,13 @@
 			<div class="row">
 				<div class="col-md-12">
 					<h2>Bronze Boat Lake Corporate Friends: $1,000+</h2>
-					<p><a href="http://www.capitolmac.com/"><img src="img/capitolmac.gif" alt="CapitolMac" class="img-responsive"></a></p>
-					<p><a href="http://www.ober.com/"><img src="img/ober.jpg" alt="Ober Kaler Attorneys at Law" class="img-responsive"></a></p>
-					<p><a href="http://citysweat.com/"><img src="img/charmcityfitnesslogo.jpg" alt="Charm City Fitness" class="img-responsive"></a></p>
-					<p><a href="http://www.barnyczgroup.com/"><img src="img/barnycz.jpg" alt="Barnycz group" class="img-responsive"></a></p>
-					<p><a href="http://www.epicrx.com/"><img src="img/epic.jpg" alt="Epic Rx" class="img-responsive"></a></p>
-					<p><a href="http://www.hopkinsmedicine.org/"><img src="img/johnshopkins.jpg" alt="Johns Hopkins Medicine" class="img-responsive"></a></p>
-					<p><a href="http://www.rpic.com/"><img src="img/rpi.jpg" alt="RPI Consultants" class="img-responsive"></a></p>
+					<p><a href="http://www.capitolmac.com/"><img src="/_img/capitolmac.gif" alt="CapitolMac" class="img-responsive"></a></p>
+					<p><a href="http://www.ober.com/"><img src="/_img/ober.jpg" alt="Ober Kaler Attorneys at Law" class="img-responsive"></a></p>
+					<p><a href="http://citysweat.com/"><img src="/_img/charmcityfitnesslogo.jpg" alt="Charm City Fitness" class="img-responsive"></a></p>
+					<p><a href="http://www.barnyczgroup.com/"><img src="/_img/barnycz.jpg" alt="Barnycz group" class="img-responsive"></a></p>
+					<p><a href="http://www.epicrx.com/"><img src="/_img/epic.jpg" alt="Epic Rx" class="img-responsive"></a></p>
+					<p><a href="http://www.hopkinsmedicine.org/"><img src="/_img/johnshopkins.jpg" alt="Johns Hopkins Medicine" class="img-responsive"></a></p>
+					<p><a href="http://www.rpic.com/"><img src="/_img/rpi.jpg" alt="RPI Consultants" class="img-responsive"></a></p>
 				</div>
 			</div>
 
@@ -79,6 +79,6 @@
 </div>
 
 
-<?php require "partials/_foot.php" ?>
-<?php require "partials/_scripts.php" ?>
-<?php require "partials/_end.php" ?>
+<?php require "../_partials/_foot.php" ?>
+<?php require "../_partials/_scripts.php" ?>
+<?php require "../_partials/_end.php" ?>
