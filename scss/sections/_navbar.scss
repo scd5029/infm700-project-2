@@ -1,282 +1,441 @@
-// --- Navbar ---
-$fullHeight: 100px;
-$maxMenuWidth: 899px;
-$smallMenuWidth: 744px;
-$mobileMenuWidth: 534px;
-
+// --- Top Level ---
 .se-navbar {
-  position     : fixed;
-  z-index      : 1000;
-  top          : 0;
-  left         : 0;
-  width        : 100%;
-  height       : $fullHeight + 1px;
-  background   : #FFF;
-  border-bottom: 1px solid $gray4;
-  box-shadow   : 0 1px 3px rgba(#000, .3);
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  background-color: #FFF;
+  overflow: hidden;
+  @include transition(all 300ms ease-out 0ms);
+  @include translate3d(0, 0, 0);
 
-  @media screen and (max-width: $smallMenuWidth) {
-    height: 80px;
-  }
-
-  @media screen and (max-width: $mobileMenuWidth) {
-    height: auto;
-  }
-}
-
-.se-navbar.se-navbar-short {
-  height: $fullHeight / 2 + 1px;
-  .se-navbar-b-t-name {
-    line-height: 50px;
-    margin-top: 0;
-    margin-left: 10px;
-  }
-  .se-navbar-b-t-sub-title {
-    display: none;
-  }
-  .se-navbar-lower-menu {
-    display: none;
-  }
-
-  @media screen and (max-width: $smallMenuWidth) {
-    height: 40px;
-    .se-navbar-b-t-name {
-      line-height: 40px;
-    }
-
-    .se-navbar-menu {
-      display: none;
-    }
-
-    .se-navbar-show-menu {
-      display: block;
-      float: right;
-      line-height: 40px;
-      margin-right: 10px;
-    }
-
-    // Show Menu
-    &.se-navbar-short-show {
-      height: 80px;
-      .se-navbar-menu {
-        display: block;
-      }
-      .se-navbar-lower-menu {
-        display: none;
-      }
-    }
-  }
-
-  @media screen and (max-width: $mobileMenuWidth) {
-    // Show Menu
-    &.se-navbar-short-show {
-      height: auto;
-      .se-navbar-menu {
-        display: block;
-      }
-      .se-navbar-lower-menu {
-        display: none;
-      }
-    }
+  &.se-navbar-expanded {
+    height: 356px;
   }
 }
 
 
-// --- Level 1 ---
-.se-navbar-show-menu {
-  display: none;
+// --- Brand Group ---
+.se-navbar-brand {
+  height: 40px;
+  text-align: center;
+  a:hover { text-decoration: none; }
 }
 
-.se-navbar-brand-logo {
-  display: block;
+.se-navbar-logo {
   float: left;
   height: 100%;
-  margin-right: -10px;
   img {
+    width: auto;
     height: 100%;
   }
-
-  @media screen and (max-width: $smallMenuWidth) {
-    margin-right: 0;
-  }
-
-  @media screen and (max-width: $mobileMenuWidth) {
-    height: 40px;
-  }
 }
 
-
-.se-navbar-brand {
-  float : left;
-  color : $greenDark;
-  height: $fullHeight;
-  &:hover {
-    text-decoration: none;
-    color          : $greenDark;
-  }
-
-  @media screen and (max-width: $smallMenuWidth) {
-    height: 40px;
-  }
+.se-navbar-menu-button {
+  float: right;
+  height: 100%;
+  width: 40px;
+  line-height: 40px;
 }
 
-
-$menuHeight: $fullHeight / 2 - 10px;
-
-.se-navbar-menu {
-  list-style  : none;
-  float       : right;
-  padding     : 0;
-  margin      : 0;
-  height      : $menuHeight;
-  margin-top  : 5px;
-  margin-right: 10px;
-
-  @media screen and (max-width: $smallMenuWidth) {
-    height: 40px;
-    float: left;
-    margin: 0;
-  }
-
-  @media screen and (max-width: $mobileMenuWidth) {
-    float: none;
-    height: auto;
-    clear: both;
-  }
-}
-
-.se-navbar-lower-menu {
-  @extend .se-navbar-menu;
-  clear: right;
-
-  @media screen and (max-width: $smallMenuWidth) {
-    display: none;
-  }
-}
-
-
-// --- Level 2 ---
-.se-navbar-b-logo {
-  float: left;
-  display: block;
-}
-
-.se-navbar-b-title {
-  float: left;
-}
-
-.se-navbar-m-button {
-  float       : left;
-  font-size   : 16px;
-  margin-right: 10px;
-  line-height : $menuHeight;
-
-  a {
-    display    : inline-block;
-    padding    : 6px 10px;
-    line-height: 1.4;
-    color      : $gray6;
-    &:hover {
-      text-decoration : none;
-      background-color: $blueDark;
-      color           : #FFF;
-      border-radius   : 2px;
-    }
-  }
-
-  @media screen and (max-width: $maxMenuWidth) {
-    font-size: 14px;
-    margin-right: 0;
-  }
-
-  @media screen and (max-width: $mobileMenuWidth) {
-    float: none;
-    a {
-      display: block;
-    }
-  }
-}
-
-.se-navbar-lm-button {
-  float       : left;
-  margin-right: 10px;
-  line-height : $menuHeight;
-
-  a {
-    @extend .btn;
-    @extend .btn-success;
-  }
-}
-
-
-// --- Level 3 ---
-.se-navbar-b-t-name {
-  font-size: 22px;
-  line-height: 1.4;
-  margin-top: 20px;
-
-  @media screen and (max-width: $maxMenuWidth) {
-    font-size: 16px;
-  }
-
-  @media screen and (max-width: $smallMenuWidth) {
-    height: 40px;
-    line-height: 40px;
-    margin-top: 0;
-    width: 100%;
-    margin-left: 10px;
-  }
-}
-
-.se-navbar-b-t-sub-title {
-  margin-top: 5px;
+.se-navbar-brand-name {
+  line-height: 40px;
   font-size: 18px;
-  font-style: italic;
-
-  @media screen and (max-width: $maxMenuWidth) {
-    font-size: 14px;
+  color: $greenDark;
+  &:hover {
+    color: $green;
   }
+}
 
-  @media screen and (max-width: $smallMenuWidth) {
-    display: none;
+
+// --- Menu Group ---
+.se-navbar-menus {
+  position: absolute;
+  top: 40px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  a:hover { text-decoration: none; }
+}
+
+// -- Level 1 --
+.se-navbar-top-menus {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.se-navbar-lower-buttons {
+  @extend .se-navbar-top-menus;
+}
+
+// -- Inside .se-navbar-top-menus --
+%se-navbar-top-menus-item {
+  height: 40px;
+}
+
+.se-navbar-top-menus-item {
+  @extend %se-navbar-top-menus-item;
+}
+
+%se-navbar-menu-item-title {
+  height: 100%;
+  display: block;
+  line-height: 40px;
+  padding: 0 15px;
+  font-size: 16px;
+  &:hover {
+    background-color: $blue;
+    color: #FFF;
   }
+}
+%se-navbar-menu-item-title-after {
+  &::after {
+    content: ">";
+    float: right;
+  }
+}
+.se-navbar-menu-item-title {
+  @extend %se-navbar-menu-item-title;
+  @extend %se-navbar-menu-item-title-after;
 }
 
 
 // --- Drop Down ---
-.se-navbar-m-drop-down {
-  display: none;
-  position: absolute;
-  top: 90%;
-  right: 0;
+.se-navbar-top-menus-dropdown {
   list-style: none;
-  background-color: #FFF;
   padding: 0;
   margin: 0;
-  border: 1px solid $gray4;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: $gray6;
+  @include transition(all 150ms ease-out 0ms);
+  // @include translate3d(100%, 0, 0);
+  left: 100%;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
-.se-navbar-m-dd-button {
+.se-navbar-top-menus-item { // open Drop Down
+  &.se-navbar-top-menus-item-open {
+    .se-navbar-top-menus-dropdown {
+      // @include translate3d(0, 0, 0);
+      left: 0;
+    }
+  }
+}
+
+.se-navbar-dropdown-back-button {
+  @extend %se-navbar-top-menus-item;
   a {
-    display: block;
-    height: 34px;
-    white-space: nowrap;
+    @extend %se-navbar-menu-item-title;
+    color: #FFF;
+  }
+}
+
+.se-navbar-dropdown-item {
+  @extend .se-navbar-dropdown-back-button;
+  a {
     overflow: hidden;
-    &:hover {
-      border-radius: 0;
-    }
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding-left: 30px;
   }
 }
 
-.se-navbar-m-button {
-  position: relative;
 
-  @media screen and (min-width: $smallMenuWidth) {
-    &:hover {
-      .se-navbar-m-drop-down {
-        display: block;
-      }
-    }
-  }
-}
+
+
+
+
+
+
+// --- Navbar ---
+$fullHeight: 100px;
+// $maxMenuWidth: 899px;
+// $smallMenuWidth: 744px;
+// $mobileMenuWidth: 534px;
+
+// .se-navbar {
+//   position     : fixed;
+//   z-index      : 1000;
+//   top          : 0;
+//   left         : 0;
+//   width        : 100%;
+//   height       : $fullHeight + 1px;
+//   background   : #FFF;
+//   border-bottom: 1px solid $gray4;
+//   box-shadow   : 0 1px 3px rgba(#000, .3);
+
+//   @media screen and (max-width: $smallMenuWidth) {
+//     height: 80px;
+//   }
+
+//   @media screen and (max-width: $mobileMenuWidth) {
+//     height: auto;
+//   }
+// }
+
+// .se-navbar.se-navbar-short {
+//   height: $fullHeight / 2 + 1px;
+//   .se-navbar-b-t-name {
+//     line-height: 50px;
+//     margin-top: 0;
+//     margin-left: 10px;
+//   }
+//   .se-navbar-b-t-sub-title {
+//     display: none;
+//   }
+//   .se-navbar-lower-menu {
+//     display: none;
+//   }
+
+//   @media screen and (max-width: $smallMenuWidth) {
+//     height: 40px;
+//     .se-navbar-b-t-name {
+//       line-height: 40px;
+//     }
+
+//     .se-navbar-menu {
+//       display: none;
+//     }
+
+//     .se-navbar-show-menu {
+//       display: block;
+//       float: right;
+//       line-height: 40px;
+//       margin-right: 10px;
+//     }
+
+//     // Show Menu
+//     &.se-navbar-short-show {
+//       height: 80px;
+//       .se-navbar-menu {
+//         display: block;
+//       }
+//       .se-navbar-lower-menu {
+//         display: none;
+//       }
+//     }
+//   }
+
+//   @media screen and (max-width: $mobileMenuWidth) {
+//     // Show Menu
+//     &.se-navbar-short-show {
+//       height: auto;
+//       .se-navbar-menu {
+//         display: block;
+//       }
+//       .se-navbar-lower-menu {
+//         display: none;
+//       }
+//     }
+//   }
+// }
+
+
+// // --- Level 1 ---
+// .se-navbar-show-menu {
+//   display: none;
+// }
+
+// .se-navbar-brand-logo {
+//   display: block;
+//   float: left;
+//   height: 100%;
+//   margin-right: -10px;
+//   img {
+//     height: 100%;
+//   }
+
+//   @media screen and (max-width: $smallMenuWidth) {
+//     margin-right: 0;
+//   }
+
+//   @media screen and (max-width: $mobileMenuWidth) {
+//     height: 40px;
+//   }
+// }
+
+
+// .se-navbar-brand {
+//   float : left;
+//   color : $greenDark;
+//   height: $fullHeight;
+//   &:hover {
+//     text-decoration: none;
+//     color          : $greenDark;
+//   }
+
+//   @media screen and (max-width: $smallMenuWidth) {
+//     height: 40px;
+//   }
+// }
+
+
+// $menuHeight: $fullHeight / 2 - 10px;
+
+// .se-navbar-menu {
+//   list-style  : none;
+//   float       : right;
+//   padding     : 0;
+//   margin      : 0;
+//   height      : $menuHeight;
+//   margin-top  : 5px;
+//   margin-right: 10px;
+
+//   @media screen and (max-width: $smallMenuWidth) {
+//     height: 40px;
+//     float: left;
+//     margin: 0;
+//   }
+
+//   @media screen and (max-width: $mobileMenuWidth) {
+//     float: none;
+//     height: auto;
+//     clear: both;
+//   }
+// }
+
+// .se-navbar-lower-menu {
+//   @extend .se-navbar-menu;
+//   clear: right;
+
+//   @media screen and (max-width: $smallMenuWidth) {
+//     display: none;
+//   }
+// }
+
+
+// // --- Level 2 ---
+// .se-navbar-b-logo {
+//   float: left;
+//   display: block;
+// }
+
+// .se-navbar-b-title {
+//   float: left;
+// }
+
+// .se-navbar-m-button {
+//   float       : left;
+//   font-size   : 16px;
+//   margin-right: 10px;
+//   line-height : $menuHeight;
+
+//   a {
+//     display    : inline-block;
+//     padding    : 6px 10px;
+//     line-height: 1.4;
+//     color      : $gray6;
+//     &:hover {
+//       text-decoration : none;
+//       background-color: $blueDark;
+//       color           : #FFF;
+//       border-radius   : 2px;
+//     }
+//   }
+
+//   @media screen and (max-width: $maxMenuWidth) {
+//     font-size: 14px;
+//     margin-right: 0;
+//   }
+
+//   @media screen and (max-width: $mobileMenuWidth) {
+//     float: none;
+//     a {
+//       display: block;
+//     }
+//   }
+// }
+
+// .se-navbar-lm-button {
+//   float       : left;
+//   margin-right: 10px;
+//   line-height : $menuHeight;
+
+//   a {
+//     @extend .btn;
+//     @extend .btn-success;
+//   }
+// }
+
+
+// // --- Level 3 ---
+// .se-navbar-b-t-name {
+//   font-size: 22px;
+//   line-height: 1.4;
+//   margin-top: 20px;
+
+//   @media screen and (max-width: $maxMenuWidth) {
+//     font-size: 16px;
+//   }
+
+//   @media screen and (max-width: $smallMenuWidth) {
+//     height: 40px;
+//     line-height: 40px;
+//     margin-top: 0;
+//     width: 100%;
+//     margin-left: 10px;
+//   }
+// }
+
+// .se-navbar-b-t-sub-title {
+//   margin-top: 5px;
+//   font-size: 18px;
+//   font-style: italic;
+
+//   @media screen and (max-width: $maxMenuWidth) {
+//     font-size: 14px;
+//   }
+
+//   @media screen and (max-width: $smallMenuWidth) {
+//     display: none;
+//   }
+// }
+
+
+// // --- Drop Down ---
+// .se-navbar-m-drop-down {
+//   display: none;
+//   position: absolute;
+//   top: 90%;
+//   right: 0;
+//   list-style: none;
+//   background-color: #FFF;
+//   padding: 0;
+//   margin: 0;
+//   border: 1px solid $gray4;
+// }
+
+// .se-navbar-m-dd-button {
+//   a {
+//     display: block;
+//     height: 34px;
+//     white-space: nowrap;
+//     overflow: hidden;
+//     &:hover {
+//       border-radius: 0;
+//     }
+//   }
+// }
+
+// .se-navbar-m-button {
+//   position: relative;
+
+//   @media screen and (min-width: $smallMenuWidth) {
+//     &:hover {
+//       .se-navbar-m-drop-down {
+//         display: block;
+//       }
+//     }
+//   }
+// }
 
