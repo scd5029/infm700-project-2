@@ -57,8 +57,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  overflow-y: hidden;
-  overflow-x: hidden;
+  overflow: hidden;
   a:hover { text-decoration: none; }
 }
 
@@ -132,22 +131,73 @@
   }
 }
 
-.se-navbar-dropdown-back-button {
+%se-navbar-dropdown-back-button {
   @extend %se-navbar-top-menus-item;
   a {
     @extend %se-navbar-menu-item-title;
     color: #FFF;
   }
 }
+.se-navbar-dropdown-back-button {
+  @extend %se-navbar-dropdown-back-button;
+}
 
 .se-navbar-dropdown-item {
-  @extend .se-navbar-dropdown-back-button;
+  @extend %se-navbar-dropdown-back-button;
   a {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
     padding-left: 30px;
   }
+}
+
+
+// Medium devices (desktops, 992px and up)
+@include respond-to(screen-md) {
+  .se-navbar {
+    height: 80px;
+    overflow: visible;}
+
+  // Brand Group
+  .se-navbar-brand {
+    height: 100%;
+    text-align: left;
+    float: left;}
+
+    .se-navbar-menu-button {
+      display: none;}
+
+  // Menu Group
+  .se-navbar-menus {
+    position: static;
+    float: right;
+    overflow: visible;}
+
+    .se-navbar-top-menus-item {
+      float: left;
+      position: relative;
+      &:hover {
+        .se-navbar-top-menus-dropdown { display: block; }}}
+
+      %se-navbar-menu-item-title {
+        padding: 0 10px;}
+
+      %se-navbar-menu-item-title-after {
+        &::after { content: none; }}
+
+      .se-navbar-top-menus-dropdown {
+        position: absolute;
+        top: 100%;
+        left: auto;
+        bottom: auto;
+        right: 0;
+        width: auto;
+        overflow-y: visible;
+        display: none;}
+
+        .se-navbar-dropdown-back-button {
+          display: none;}
 }
 
 

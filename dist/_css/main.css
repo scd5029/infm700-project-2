@@ -5078,8 +5078,7 @@ html, body {
   bottom: 0;
   left: 0;
   right: 0;
-  overflow-y: hidden;
-  overflow-x: hidden; }
+  overflow: hidden; }
   .se-navbar-menus a:hover {
     text-decoration: none; }
 
@@ -5133,6 +5132,48 @@ html, body {
   text-overflow: ellipsis;
   padding-left: 30px; }
 
+@media (min-width: 992px) {
+  .se-navbar {
+    height: 80px;
+    overflow: visible; }
+
+  .se-navbar-brand {
+    height: 100%;
+    text-align: left;
+    float: left; }
+
+  .se-navbar-menu-button {
+    display: none; }
+
+  .se-navbar-menus {
+    position: static;
+    float: right;
+    overflow: visible; }
+
+  .se-navbar-top-menus-item {
+    float: left;
+    position: relative; }
+    .se-navbar-top-menus-item:hover .se-navbar-top-menus-dropdown {
+      display: block; }
+
+  .se-navbar-menu-item-title, .se-navbar-dropdown-back-button a, .se-navbar-dropdown-item a {
+    padding: 0 10px; }
+
+  .se-navbar-menu-item-title::after {
+    content: none; }
+
+  .se-navbar-top-menus-dropdown {
+    position: absolute;
+    top: 100%;
+    left: auto;
+    bottom: auto;
+    right: 0;
+    width: auto;
+    overflow-y: visible;
+    display: none; }
+
+  .se-navbar-dropdown-back-button {
+    display: none; } }
 .se-banner {
   height: 350px;
   background-color: #f5f7fa;
