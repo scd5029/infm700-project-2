@@ -21,7 +21,7 @@ $navbar_structure = array(
     'Become a Individual Member and Donate',
     'Volunteer',
     'Find Us on Social Network',
-    'Become a Corporate Parnter',
+    'Become a Corporate Partner',
     'Impace to Patterson Park',
     'Patterson Park Planning Work Group'
   ),
@@ -34,6 +34,7 @@ $navbar_structure = array(
   ),
   'Places and Fun' => array(
     'Park Map and Resources',
+    'Swimming Pool',
     'A List of Places and Fun ...'
   ),
   'Who We Are' => array(
