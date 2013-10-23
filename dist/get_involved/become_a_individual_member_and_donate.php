@@ -1,5 +1,5 @@
-<?php require "partials/_head.php" ?>
-<?php require "partials/_navbar.php" ?>
+<?php require "../_partials/_head.php" ?>
+<?php require "../_partials/_navbar.php" ?>
 
 
 <!-- Main jumbotron for a primary marketing message or call to action -->
@@ -46,7 +46,7 @@
         </div>
         <div class="panel-body">
           <div class="col-lg-4">
-            <img src="img/billmules.jpg" alt="Bill Mules, Member of Friends of Patterson Park" title="Bill Mules, Member of Friends of Patterson Park" class="img-responsive">
+            <img src="/_img/billmules.jpg" alt="Bill Mules, Member of Friends of Patterson Park" title="Bill Mules, Member of Friends of Patterson Park" class="img-responsive">
           </div>
           <div class="col-lg-8">
              "Growing up in Baltimore, Patterson Park was an important place for myself, my friends, and my family. During the day, Patterson Park was our playground. We climbed trees, sat on cannon (fighting the War of 1812 over, again and again), sailed our small sailboats on the boat lake, ran up and down hills with seagulls flying overhead - enjoying our youth, our freedom and our young mothers who were usually with us. I became a member to make sure this park can live on and help create lasting childhood memories in the years to come." - Bill Mules
@@ -169,8 +169,8 @@
 </div>
 
 
-<?php require "partials/_foot.php" ?>
-<?php require "partials/_scripts.php" ?>
+<?php require "../_partials/_foot.php" ?>
+<?php require "../_partials/_scripts.php" ?>
 
 <script type="text/javascript">
 $(document).ready(function(){
@@ -193,4 +193,4 @@ $(document).ready(function(){
 });
 </script>
 
-<?php require "partials/_end.php" ?>
+<?php require "../_partials/_end.php" ?>

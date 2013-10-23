@@ -1,5 +1,27 @@
 (function(window, $, undefined) {
 
+  // --- Navbar Mobile Menu ---
+  $('#js-navbar-toggle-menu').on('click', function() {
+    $('#js-navbar').toggleClass('se-navbar-expanded');
+    return false;
+  });
+
+  $('.js-navbar-menus-item').on('click', function() {
+    $(this).parent().addClass('se-navbar-top-menus-item-open');
+    $('#se-navbar-menus').scrollTop(0)
+      .addClass('se-navbar-menus-dropdown-open');
+    return false;
+  });
+
+  $('.js-navbar-menus-item-back').on('click', function() {
+    $(this).parents('.se-navbar-top-menus-item')
+      .removeClass('se-navbar-top-menus-item-open');
+    $('#se-navbar-menus').removeClass('se-navbar-menus-dropdown-open');
+    return false;
+  });
+
+
+
   var mapOptions = {
     center: new google.maps.LatLng(39.290734,-76.550681),
     zoom: 13,
@@ -56,17 +78,17 @@
 
 
   // Navbar Scroll Hide
-  $(document).on('scroll', function() {
-    if ( $(document).scrollTop() > 200 ) {
-      $('#se-navbar').addClass('se-navbar-short');
-    } else {
-      $('#se-navbar').removeClass('se-navbar-short se-navbar-short-show');
-    }
-  })
+  // $(document).on('scroll', function() {
+  //   if ( $(document).scrollTop() > 200 ) {
+  //     $('#se-navbar').addClass('se-navbar-short');
+  //   } else {
+  //     $('#se-navbar').removeClass('se-navbar-short se-navbar-short-show');
+  //   }
+  // })
 
-  $('#se-navbar-show-menu').on('click', function() {
-    $('#se-navbar').toggleClass('se-navbar-short-show');
-    return false;
-  })
+  // $('#se-navbar-show-menu').on('click', function() {
+  //   $('#se-navbar').toggleClass('se-navbar-short-show');
+  //   return false;
+  // })
 
 })(window, window.jQuery);

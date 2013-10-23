@@ -40,7 +40,7 @@
             </p>
           </div>
           <div class="row text-center">
-            <img src="img/charmcityfitness.jpg" class="img-responsive" alt="Charm City Fitness">
+            <img src="/_img/charmcityfitness.jpg" class="img-responsive" alt="Charm City Fitness">
             <p>
               &nbsp;
             </p>
@@ -64,7 +64,7 @@
           </div>
           <div class="row text-center">
             <!-- http://www.bmoremedia.com/galleries/insiderguides/Canton/FriendsOfPattersonPark_01.jpg -->
-            <img src="img/foundationFriend.jpg" class="img-responsive" alt="Friends of Patterson Park House">
+            <img src="/_img/foundationFriend.jpg" class="img-responsive" alt="Friends of Patterson Park House">
             <p>
               &nbsp;
             </p>
@@ -88,7 +88,7 @@
           </div>
           <div class="row text-center">
             <!-- http://baltimoreaerials.com/wp-content/uploads/galleries/post-49/full/edsc_0229.jpg -->
-            <img src="img/communityFriend.jpg" class="img-responsive" alt="Volunteer">
+            <img src="/_img/communityFriend.jpg" class="img-responsive" alt="Volunteer">
             <p>
               &nbsp;
             </p>

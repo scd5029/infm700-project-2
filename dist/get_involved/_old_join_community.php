@@ -1,9 +1,9 @@
-<?php require "partials/_head.php" ?>
-<?php require "partials/_navbar.php" ?>
+<?php require "_partials/_head.php" ?>
+<?php require "_partials/_navbar.php" ?>
 
 
 <!-- Banner -->
-<div class="se-banner se-banner-homepage" style="background-image: url('img/join-community-1.jpg')">
+<div class="se-banner se-banner-homepage" style="background-image: url('/_img/join-community-1.jpg')">
   <div class="se-banner-p-inner">
     <div class="se-banner-p-i-caption">
       <h2 class="se-banner-p-i-c-title">Join the Community</h2>
@@ -41,7 +41,7 @@
     <div class="md-post-item-body">
       <div class="md-post-item-b-left yellow">
         <div class="md-post-item-b-center-block">
-          <img src="img/join-community-post-1.jpg" alt="">
+          <img src="/_img/join-community-post-1.jpg" alt="">
           <div class="md-post-item-b-cb-caption">Interested in becoming a Friends of Patterson Park Volunteer in 2013?</div>
         </div>
       </div>
@@ -128,6 +128,6 @@
 </div><!-- END .se-content -->
 
 
-<?php require "partials/_foot.php" ?>
-<?php require "partials/_scripts.php" ?>
-<?php require "partials/_end.php" ?>
+<?php require "_partials/_foot.php" ?>
+<?php require "_partials/_scripts.php" ?>
+<?php require "_partials/_end.php" ?>

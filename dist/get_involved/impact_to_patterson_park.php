@@ -1,5 +1,5 @@
-<?php require "partials/_head.php" ?>
-<?php require "partials/_navbar.php" ?>
+<?php require "../_partials/_head.php" ?>
+<?php require "../_partials/_navbar.php" ?>
 
 
 
@@ -40,7 +40,7 @@
       <h2>2012 Patterson Park Accomplishments</h2>
       <div class="row">
         <div class="col-md-3">
-          <img src="img/tree.jpg" alt="Tree Team" class="img-responsive">
+          <img src="/_img/tree.jpg" alt="Tree Team" class="img-responsive">
         </div>
         <div class="col-md-9">
           <h3>Tree Team, Pagoda Team, Boat Lake Team, and Weedin' Wednesdays</h3>
@@ -51,7 +51,7 @@
       </div>
       <div class="row">
         <div class="col-md-3">
-          <img src="img/kid.jpg" alt="Youth Events" class="img-responsive">
+          <img src="/_img/kid.jpg" alt="Youth Events" class="img-responsive">
         </div>
         <div class="col-md-9">
           <h3>Free Youth and Family Programs</h3>
@@ -62,7 +62,7 @@
       </div>
       <div class="row">
         <div class="col-md-3">
-          <img src="img/pagoda.jpg" alt="Pagoda" class="img-responsive">
+          <img src="/_img/pagoda.jpg" alt="Pagoda" class="img-responsive">
         </div>
         <div class="col-md-9">
           <h3>Concert Series, Dia del Nino, Halloween Lantern Parade, and Other Events</h3>
@@ -118,6 +118,6 @@
 
 
 
-<?php require "partials/_foot.php" ?>
-<?php require "partials/_scripts.php" ?>
-<?php require "partials/_end.php" ?>
+<?php require "../_partials/_foot.php" ?>
+<?php require "../_partials/_scripts.php" ?>
+<?php require "../_partials/_end.php" ?>

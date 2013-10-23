@@ -1,5 +1,5 @@
-<?php require "partials/_head.php" ?>
-<?php require "partials/_navbar.php" ?>
+<?php require "../_partials/_head.php" ?>
+<?php require "../_partials/_navbar.php" ?>
 
 
 <!-- Banner -->
@@ -55,7 +55,7 @@
         </div>
 
         <div class="col-md-6 text-center">
-          <img src="img/boat.jpg" class="img-responsive" alt="Boat Lake Team" title="Boat Lake Team">
+          <img src="/_img/boat.jpg" class="img-responsive" alt="Boat Lake Team" title="Boat Lake Team">
           <p>&nbsp;</p>
         </div>
       </div>
@@ -64,104 +64,104 @@
 
 
   <!-- Post 2 -->
-  <div class = "row">
-    <div class = "col-md-6">
+  <div class="row">
+    <div class="col-md-6">
       <h3>The Friends of Patterson Park Ambassadors</h3>
       <p>The Friends of Patterson Park also runs or supports many special events in Patterson Park. Our newest group of volunteers, called Park Ambassadors, help staff events, work membership tables, and promote The Friends at community events.</p>
       <p></p>
       <p><a class="btn btn-info" href="contactUs.html?volunteer=true&volunteerTeam=The Friends of Patterson Park Ambassadors">Sign Up &raquo;</a></p>
     </div>
 
-    <div class = "col-md-6 text-center">
-      <img src = "img/ambassadors.jpg" class = "img-responsive" alt = "The Friends of Patterson Park Ambassadors" title = "The Friends of Patterson Park Ambassadors">
+    <div class="col-md-6 text-center">
+      <img src="/_img/ambassadors.jpg" class="img-responsive" alt="The Friends of Patterson Park Ambassadors" title="The Friends of Patterson Park Ambassadors">
       <p>&nbsp;</p>
     </div>
   </div>
 
 
   <!-- Post 3 -->
-  <div class = "row">
-    <div class = "col-md-6">
+  <div class="row">
+    <div class="col-md-6">
       <h3>Pagoda Team</h3>
       <p>The Pagoda Team cares for the flower gardens, cleans the Pagoda, and edges the walkways.  We also need Pagoda Docents to staff the Pagoda on Sundays through October, 12-6pm and during special events. Docent shifts are only 2 hours long, and we need your help to keep the pagoda open and free to the public.</p>
       <p></p>
       <p><a class="btn btn-info" href="contactUs.html?volunteer=true&volunteerTeam=Pagoda Team">Sign Up &raquo;</a></p>
     </div>
 
-    <div class = "col-md-6 text-center">
-      <img src = "img/pagoda1.jpg" class = "img-responsive" alt = "Pagoda Team" title = "Pagoda Team">
+    <div class="col-md-6 text-center">
+      <img src="/_img/pagoda1.jpg" class="img-responsive" alt="Pagoda Team" title="Pagoda Team">
       <p>&nbsp;</p>
     </div>
   </div>
 
 
   <!-- Post 4 -->
-  <div class = "row">
-    <div class = "col-md-6">
+  <div class="row">
+    <div class="col-md-6">
       <h3>Tree Team</h3>
       <p>The Tree Team cares for the TREES!  Sign up for the Tree Team to get meeting location and the date to the Fall Tree Planting.</p>
       <p></p>
       <p><a class="btn btn-info" href="contactUs.html?volunteer=true&volunteerTeam=Tree Team">Sign Up &raquo;</a></p>
     </div>
 
-    <div class = "col-md-6 text-center">
-      <img src = "img/treeTeam.jpg" class = "img-responsive" alt = "Tree Team" title = "Tree Team">
+    <div class="col-md-6 text-center">
+      <img src="/_img/treeTeam.jpg" class="img-responsive" alt="Tree Team" title="Tree Team">
       <p>&nbsp;</p>
     </div>
   </div>
 
 
   <!-- Post 5 -->
-  <div class = "row">
-    <div class = "col-md-6">
+  <div class="row">
+    <div class="col-md-6">
       <h3>Weedin' Wednesdays Garden Team</h3>
       <p>Plant, weed and water various gardens in Patterson Park!</p>
       <p></p>
       <p><a class="btn btn-info" href="contactUs.html?volunteer=true&volunteerTeam=Weedin' Wednesdays Garden Team">Sign Up &raquo;</a></p>
     </div>
 
-    <div class = "col-md-6 text-center">
-      <img src = "img/weeding.jpg" class = "img-responsive" alt = "Weedin' Wednesdays Garden Team" title = "Weedin' Wednesday Garden Team">
+    <div class="col-md-6 text-center">
+      <img src="/_img/weeding.jpg" class="img-responsive" alt="Weedin' Wednesdays Garden Team" title="Weedin' Wednesday Garden Team">
       <p>&nbsp;</p>
     </div>
   </div>
 
 
   <!-- Post 6 -->
-  <div class = "row">
-    <div class = "col-md-6">
+  <div class="row">
+    <div class="col-md-6">
       <h3>Youth/Recreation Volunteers</h3>
       <p>We run soccer clinics year round and tennis programs in the summer. These programs are very popular but, to keep them free for our neighborhood youth, we need LOTS of help.</p>
       <p></p>
       <p><a class="btn btn-info" href="contactUs.html?volunteer=true&volunteerTeam=Youth/Recreation Volunteers">Sign Up &raquo;</a></p>
     </div>
 
-    <div class = "col-md-6 text-center">
-      <img src = "img/kid.jpg" class = "img-responsive" alt = "Youth/Recreation Volunteers" title = "Youth/Recreation Volunteers">
+    <div class="col-md-6 text-center">
+      <img src="/_img/kid.jpg" class="img-responsive" alt="Youth/Recreation Volunteers" title="Youth/Recreation Volunteers">
       <p>&nbsp;</p>
     </div>
   </div>
 
 
   <!-- Post 7 -->
-  <div class = "row">
-    <div class = "col-md-6">
+  <div class="row">
+    <div class="col-md-6">
       <h3>Special Events</h3>
       <p>Additional special events needing volunteer help include: Baltimore Marathon Water Stop, Fishing Festival, Youth Volunteer Day, Dia del Nino, the Annual Halloween Parade, Fishing Festival and Friends Membership Events. gardening projects. If you are interested in helping out during these events, let us know!</p>
       <p></p>
       <p><a class="btn btn-info" href="contactUs.html?volunteer=true&volunteerTeam=Special Events">Sign Up &raquo;</a></p>
     </div>
 
-    <div class = "col-md-6 text-center">
-      <img src = "img/marathon.jpg" class = "img-responsive" alt = "Baltimore Marathon Water Stop" title = "Baltimore Marathon Water Stop">
+    <div class="col-md-6 text-center">
+      <img src="/_img/marathon.jpg" class="img-responsive" alt="Baltimore Marathon Water Stop" title="Baltimore Marathon Water Stop">
       <p>&nbsp;</p>
     </div>
   </div>
 
 
   <!-- Post 8 -->
-  <div class = "row">
-    <div class = "col-md-12">
+  <div class="row">
+    <div class="col-md-12">
       <h3>More Volunteer Days</h3>
       <p>We also have many opportunities that come up on a weekly basis. For example, if there is a drought, we'll schedule a volunteer event to water trees and plants. If the weeds are taking over our beautiful gardens, we'll ask for some weeders, or, if one of the playgrounds needs our attention, we'll call a volunteer day to clean it up.  Other tasks may include edging sidewalks, painting benches, picking up trash, weeding gardens, and much, much more!</p>
       <p></p>
@@ -171,9 +171,9 @@
 
 
   <!-- Post 9 -->
-  <div class = "row">
-    <div class = "col-md-12">
-      <h3 id = "contact">Contact Us</h3>
+  <div class="row">
+    <div class="col-md-12">
+      <h3 id="contact">Contact Us</h3>
       <p>For more information or to volunteer, contact us @ 410-276-3676 or volunteer@pattersonpark.com.</p>
     </div>
   </div>
@@ -181,6 +181,6 @@
 
 
 
-<?php require "partials/_foot.php" ?>
-<?php require "partials/_scripts.php" ?>
-<?php require "partials/_end.php" ?>
+<?php require "../_partials/_foot.php" ?>
+<?php require "../_partials/_scripts.php" ?>
+<?php require "../_partials/_end.php" ?>

@@ -1,5 +1,5 @@
-<?php require "partials/_head.php" ?>
-<?php require "partials/_navbar.php" ?>
+<?php require "../_partials/_head.php" ?>
+<?php require "../_partials/_navbar.php" ?>
 
 
 <!-- Main jumbotron for a primary marketing message or call to action -->
@@ -61,7 +61,7 @@
               </p>
             </div>
             <div class="row text-center">
-              <img src="img/billmules.jpg" alt="Bill Mules, Member of Friends of Patterson Park" class="img-responsive">
+              <img src="/_img/billmules.jpg" alt="Bill Mules, Member of Friends of Patterson Park" class="img-responsive">
               <p>
                 &nbsp;
               </p>
@@ -84,7 +84,7 @@
               </p>
             </div>
             <div class="row text-center">
-              <img src="img/charmcityfitness.jpg" alt="Charm City Fitness" class="img-responsive">
+              <img src="/_img/charmcityfitness.jpg" alt="Charm City Fitness" class="img-responsive">
               <p>
                 &nbsp;
               </p>
@@ -107,7 +107,7 @@
               </p>
             </div>
             <div class="row text-center">
-              <img src="img/volunteer.jpg" alt="Volunteer" class="img-responsive">
+              <img src="/_img/volunteer.jpg" alt="Volunteer" class="img-responsive">
               <p>
                 &nbsp;
               </p>
@@ -130,7 +130,7 @@
               </p>
             </div>
             <div class="row text-center">
-              <img src="img/join.jpg" alt="Join Our Staff" class="img-responsive">
+              <img src="/_img/join.jpg" alt="Join Our Staff" class="img-responsive">
               <p>
                 &nbsp;
               </p>
@@ -144,6 +144,6 @@
 
 
 
-<?php require "partials/_foot.php" ?>
-<?php require "partials/_scripts.php" ?>
-<?php require "partials/_end.php" ?>
+<?php require "../_partials/_foot.php" ?>
+<?php require "../_partials/_scripts.php" ?>
+<?php require "../_partials/_end.php" ?>

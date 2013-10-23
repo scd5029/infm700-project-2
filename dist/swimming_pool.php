@@ -77,13 +77,13 @@
         <div class="col-lg-12">
           <div class="row text-center">
             <!-- http://www.baltimoresun.com/media/photo/2011-06/23456298160240-27083814.jpg -->
-            <img src="img/pool1.jpg" class="img-responsive" alt="Patterson Park Swimming Pool">
+            <img src="/_img/pool1.jpg" class="img-responsive" alt="Patterson Park Swimming Pool">
           </div>
         </div>
         <div class="col-lg-12">
           <div class="row text-center">
             <!-- http://darkroom.baltimoresun.com/wp-content/uploads/2012/10/BS-bs-ae-weekend-rewind-080.jpg -->
-            <img src="img/pool2.jpg" class="img-responsive" alt="Patterson Park Swimming Pool">
+            <img src="/_img/pool2.jpg" class="img-responsive" alt="Patterson Park Swimming Pool">
           </div>
         </div>
       </div>

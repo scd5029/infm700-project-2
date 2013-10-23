@@ -3,38 +3,36 @@
 
 
 <!-- Banner -->
-<div class="se-banner se-banner-picture" style="background: url('img/corporate-partner-1.jpg'); background-size: cover;">
+<div class="se-banner se-banner-donate-page" style="background-image: url('/_img/donate-1.jpg')">
   <div class="se-banner-p-inner">
     <div class="se-banner-p-i-caption">
-      <h2 class="se-banner-p-i-c-title">Become our Corporate Partner</h2>
-      <p class="se-banner-p-i-c-intro">A healthy and thriving Patterson Park is GOOD FOR BUSINESS, wouldn’t you agree? We’d love your Company at our annual Corporate Friends Reception!</p>
+      <h2 class="se-banner-p-i-c-title">Support the Friends / Donate</h2>
+      <!-- <p class="se-banner-p-i-c-intro"></p> -->
     </div>
   </div>
 </div>
 
 
-<!-- Normal Page Content Section -->
-<div class="se-page">
-  <div class="se-page-container se-corporate-partner">
-    <div class="se-corporate-partner-image">
-      <img src="img/corporate-partner-2.jpg" alt="">
+<!-- Donate Options -->
+<div class="se-donate">
+  <div class="se-donate-inner">
+    <div class="se-donate-option">
+      <div class="se-donate-option-inner blue">
+        <h2>Support with a monthly gift</h2>
+        <p class="lead"> – the best way to sustain Patterson Park as “Baltimore’s Best Backyard.”</h3>
+      </div>
     </div>
-    <p class="lead">Be our guest for a contribution of $250 or more.</p>
-    <p>Contact Kathy Harget, kathy@pattersonpark.com; 410-276-3676.</p>
-    <p class="lead">Businesses who make a contribution of $500 or more ALSO qualify for the MD Community Investment Tax Credit Program and will receive a tax credit against your MD state tax obligation worth 50% of your donation!</p>
-    <div class="se-corporate-partner-donate-button"><a href="" class="btn btn-success btn-lg">Donate</a></div>
-    <p class="lead">Corporate Friends Levels:</p>
-    <ul class="lead">
-      <li>GOLD PAGODA ($15,000+)</li>
-      <li>SILVER FOUNTAIN ($5,000-$14,999)</li>
-      <li>BRONZE BOAT LAKE ($1,000-$4,999)</li>
-      <li>COPPER STATUE ($500-$999)</li>
-      <li>CORPORATE FRIEND ($250-499)</li>
-    </ul>
-    <div class="se-corporate-partner-image">
-      <img src="img/corporate-partner-3.jpg" alt="">
+    <div class="se-donate-option">
+      <div class="se-donate-option-inner green">
+        <h2>Make a one time gift at one of these levels</h2>
+        <ul class="lead">
+          <li>FRIEND:  $25-99</li>
+          <li>CONTRIBUTOR: $100- $249</li>
+          <li>ADVOCATE:  $250-499</li>
+          <li>PATRON:  $500 and Up</li>
+        </ul>
+      </div>
     </div>
-    <div class="se-corporate-partner-donate-button"><a href="" class="btn btn-success btn-lg">Donate</a></div>
   </div>
 </div>
 

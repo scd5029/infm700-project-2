@@ -1,9 +1,9 @@
-<?php require "partials/_head.php" ?>
-<?php require "partials/_navbar.php" ?>
+<?php require "_partials/_head.php" ?>
+<?php require "_partials/_navbar.php" ?>
 
 
 <!-- Banner -->
-<div class="se-banner se-banner-homepage" style="background-image: url('img/index-banner.jpg')"></div>
+<div class="se-banner se-banner-homepage" style="background-image: url('/_img/index-banner.jpg')"></div>
 
 <!-- Content -->
 <div class="se-content">
@@ -12,7 +12,7 @@
     <div class="md-post-item-body">
       <div class="md-post-item-b-left yellow">
         <div class="md-post-item-b-center-block">
-          <img src="img/post-cover-1.jpg" alt="">
+          <img src="/_img/post-cover-1.jpg" alt="">
           <div class="md-post-item-b-cb-caption">From right to left, Jennifer, her daughter, Rose, and her husband, Scott</div>
         </div>
       </div>
@@ -110,6 +110,6 @@
 </div><!-- END .se-content -->
 
 
-<?php require "partials/_foot.php" ?>
-<?php require "partials/_scripts.php" ?>
-<?php require "partials/_end.php" ?>
+<?php require "_partials/_foot.php" ?>
+<?php require "_partials/_scripts.php" ?>
+<?php require "_partials/_end.php" ?>
