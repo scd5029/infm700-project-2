@@ -8,11 +8,15 @@
 
   $('.js-navbar-menus-item').on('click', function() {
     $(this).parent().addClass('se-navbar-top-menus-item-open');
+    $('#se-navbar-menus').scrollTop(0)
+      .addClass('se-navbar-menus-dropdown-open');
     return false;
   });
 
   $('.js-navbar-menus-item-back').on('click', function() {
-    $(this).parents('.se-navbar-top-menus-item').removeClass('se-navbar-top-menus-item-open');
+    $(this).parents('.se-navbar-top-menus-item')
+      .removeClass('se-navbar-top-menus-item-open');
+    $('#se-navbar-menus').removeClass('se-navbar-menus-dropdown-open');
     return false;
   });
 

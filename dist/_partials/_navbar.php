@@ -46,6 +46,14 @@ $navbar_structure = array(
     'Employment Opportunities'
   )
 );
+
+$lower_buttons = array(
+  'Become an Individual Member' =>
+    '/get_involved/become_a_individual_member_and_donate.php',
+  'Become a Corporate Partner' =>
+    '/get_involved/become_a_corporate_partner.php',
+  'En Espanol' => '#'
+);
 ?>
 
 
@@ -63,7 +71,7 @@ $navbar_structure = array(
 
 
   <!-- Menu Group -->
-  <div class="se-navbar-menus">
+  <div class="se-navbar-menus" id="se-navbar-menus">
     <ol class="se-navbar-top-menus">
       <?php foreach ($navbar_structure as $title => $sub_items) { ?>
       <li class="se-navbar-top-menus-item">
@@ -89,7 +97,11 @@ $navbar_structure = array(
 
 
     <ol class="se-navbar-lower-buttons">
-
+      <?php foreach ($lower_buttons as $title => $url) { ?>
+        <li class="se-navbar-lower-button">
+          <a class="se-navbar-lower-anchor" href="<?=$url?>"><?=$title?></a>
+        </li>
+      <?php } ?>
     </ol>
   </div>
   <!-- /.se-navbar-menus -->
