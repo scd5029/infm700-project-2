@@ -13,12 +13,10 @@ $smallWidth: 480px;
 
 .md-post-item-picture-wall {
   background-color: $gray1;
-
-  // temp
-  text-align: center;
-  line-height: 350px;
-  font-size: 28px;
-  font-weight: bold;
+  height: 350px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 

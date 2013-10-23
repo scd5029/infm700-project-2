@@ -31,14 +31,19 @@
       <!-- Middle -->
       <div class="se-footer-i-subscribe">
         <header class="se-footer-section-header">Subscribe Email Newsletter</header>
-        <input type="email" class="se-footer-section-input" placeholder="Subscribe to Email Newsletter">
+        <input type="email" class="se-footer-section-input" placeholder="Email address">
         <button class="btn btn-success">Subscribe</button>
+        <ul class="se-footer-social-networks">
+          <li><a href="#"><img src="/_img_components/facebook-icon.png" alt=""></a></li>
+          <li><a href="#"><img src="/_img_components/rss-icon.png" alt=""></a></li>
+          <li><a href="#"><img src="/_img_components/email-icon.png" alt=""></a></li>
+        </ul>
       </div>
 
       <!-- Right -->
       <div class="se-footer-i-search">
         <header class="se-footer-section-header">Search this Website</header>
-        <input type="text" class="se-footer-section-input" placeholder="">
+        <input type="text" class="se-footer-section-input" placeholder="Search word">
         <button class="btn btn-primary">Search</button>
       </div>
 

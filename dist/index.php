@@ -18,16 +18,14 @@
       </div>
       <div class="md-post-item-b-right">
         <div class="md-post-item-b-center-block">
-          <header class="md-post-item-b-cb-title">New Friends of Patterson Park Executive Director</header>
+          <header class="md-post-item-b-cb-title"><a href="#">New Friends of Patterson Park Executive Director</a></header>
           <p class="md-post-item-b-cb-metadata">May 15, 2013</p>
           <p class="md-post-item-b-cb-excerpt">The Friends of Patterson Park is happy to announce that, after a competitive search process, Jennifer Arndt Robinson will serve as our new Executive Director. Jennifer will take the helm on August 5th as Kathy Harget leaves the Friends to pursue a nonprofit freelance career. <a href="">(more)</a></p>
         </div>
       </div>
     </div>
 
-    <div class="md-post-item-picture-wall">
-      Another wall of pictures that come with the post.
-    </div>
+    <div class="md-post-item-picture-wall" style="background-image: url('/_img/picture-wall-demo.jpg')"></div>
   </div>
 
   <!-- Post with Location -->

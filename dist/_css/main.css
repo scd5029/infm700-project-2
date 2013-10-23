@@ -1868,8 +1868,8 @@ input[type="button"].btn-block {
 
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url("/bower_components/sass-bootstrap/fonts/glyphicons-halflings-regular.eot");
-  src: url("/bower_components/sass-bootstrap/fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("/bower_components/sass-bootstrap/fonts/glyphicons-halflings-regular.woff") format("woff"), url("/bower_components/sass-bootstrap/fonts/glyphicons-halflings-regular.ttf") format("truetype"), url("/bower_components/sass-bootstrap/fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular") format("svg"); }
+  src: url("/_fonts/glyphicons-halflings-regular.eot");
+  src: url("/_fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("/_fonts/glyphicons-halflings-regular.woff") format("woff"), url("/_fonts/glyphicons-halflings-regular.ttf") format("truetype"), url("/_fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular") format("svg"); }
 
 .glyphicon {
   position: relative;
@@ -4926,10 +4926,10 @@ html, body {
 
 .md-post-item-picture-wall {
   background-color: #f5f7fa;
-  text-align: center;
-  line-height: 350px;
-  font-size: 28px;
-  font-weight: bold; }
+  height: 350px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat; }
 
 .md-post-item-b-left {
   width: 50%;
@@ -5084,6 +5084,14 @@ html, body {
   .se-navbar-brand-name:hover {
     color: #a0d468; }
 
+.se-navbar-brand-social-networks {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: none; }
+  .se-navbar-brand-social-networks li {
+    display: inline-block; }
+
 .se-navbar-menus {
   position: absolute;
   top: 40px;
@@ -5168,6 +5176,9 @@ html, body {
 
   .se-navbar-menu-button {
     display: none; }
+
+  .se-navbar-brand-social-networks {
+    display: block; }
 
   .se-navbar-menus {
     position: static;
@@ -5405,6 +5416,14 @@ html, body {
 
 .se-footer-section-input {
   margin-bottom: 10px; }
+
+.se-footer-social-networks {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 10px; }
+  .se-footer-social-networks li {
+    display: inline-block; }
 
 .se-footer-copyright {
   background-color: #000;

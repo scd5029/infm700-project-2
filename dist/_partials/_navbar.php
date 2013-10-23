@@ -67,6 +67,11 @@ $lower_buttons = array(
       <img src="/_img_components/menu-button-icon.png" alt="">
     </a>
     <a href="/index.php" class="se-navbar-brand-name">Friends of Patterson Park</a>
+    <ul class="se-navbar-brand-social-networks">
+      <li><a href="#"><img src="/_img_components/facebook-icon.png" alt=""></a></li>
+      <li><a href="#"><img src="/_img_components/rss-icon.png" alt=""></a></li>
+      <li><a href="#"><img src="/_img_components/email-icon.png" alt=""></a></li>
+    </ul>
   </div>
 
 

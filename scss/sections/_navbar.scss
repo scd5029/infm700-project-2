@@ -50,6 +50,16 @@
   }
 }
 
+.se-navbar-brand-social-networks {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: none;
+  li {
+    display: inline-block;
+  }
+}
+
 
 // --- Menu Group ---
 .se-navbar-menus {
@@ -194,6 +204,9 @@
 
     .se-navbar-menu-button {
       display: none;}
+
+    .se-navbar-brand-social-networks {
+      display: block;}
 
   // Menu Group
   .se-navbar-menus {

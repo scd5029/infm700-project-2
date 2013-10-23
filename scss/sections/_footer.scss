@@ -52,6 +52,16 @@ $smallWidth: 480px;
   margin-bottom: 10px;
 }
 
+.se-footer-social-networks {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 10px;
+  li {
+    display: inline-block;
+  }
+}
+
 
 // --- Copyright ---
 .se-footer-copyright {
