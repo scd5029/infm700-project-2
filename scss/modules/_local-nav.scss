@@ -1,0 +1,9 @@
+.md-local-nav {
+  background-color: $gray2;
+  a {
+    &:hover {
+      background-color: $blue !important;
+      color: #FFF;
+    }
+  }
+}

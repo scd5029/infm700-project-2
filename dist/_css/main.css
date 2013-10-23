@@ -5034,6 +5034,12 @@ html, body {
     font-size: 50px;
     line-height: 1; }
 
+.md-local-nav {
+  background-color: #e6e9ed; }
+  .md-local-nav a:hover {
+    background-color: #5d9cec !important;
+    color: #FFF; }
+
 .se-navbar {
   position: fixed;
   z-index: 1000;
