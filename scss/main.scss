@@ -14,8 +14,12 @@ html, body {
 
 // --- Layout ---
 .ly-application {
-  @extend .clearfix;
   height: 100%;
+
+  padding-top: 40px;
+  @include respond-to(screen-md) {
+    padding-top: 80px;
+  }
 }
 
 

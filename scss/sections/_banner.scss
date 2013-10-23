@@ -1,21 +1,7 @@
-$maxMenuWidth: 899px;
-$smallMenuWidth: 744px;
-$mobileMenuWidth: 534px;
-
-
 // --- Container ---
 .se-banner {
   height: 350px;
   background-color: $gray1;
-  margin-top: $fullHeight;
-
-  @media screen and (max-width: $smallMenuWidth) {
-    margin-top: 80px;
-  }
-
-  @media screen and (max-width: $mobileMenuWidth) {
-    margin-top: 165px;
-  }
 
   &.se-banner-calendar {
     height: auto;
