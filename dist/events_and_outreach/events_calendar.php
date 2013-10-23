@@ -1,6 +1,7 @@
 <?php require "../_partials/_head.php" ?>
 <?php require "../_partials/_navbar.php" ?>
 
+
 <!-- Banner -->
 <div class="se-banner se-banner-calendar">
   <div class="se-calendar-jumbo">

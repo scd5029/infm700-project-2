@@ -20,9 +20,8 @@ $navbar_structure = array(
   'Get Involved' => array(
     'Become a Individual Member and Donate',
     'Volunteer',
-    'Find Us on Social Network',
     'Become a Corporate Partner',
-    'Impace to Patterson Park',
+    'Impact to Patterson Park',
     'Patterson Park Planning Work Group'
   ),
   'Events and Outreach' => array(

@@ -9,7 +9,7 @@
             27 South Patterson Park Avenue<br/>
             Baltimore, MD 21231
           </address>
-          <a href="" class="se-map-block-d-i-get-direction">Get Directions from Google</a>
+          <a href="https://www.google.com/maps/preview#!q=Patterson+Park%2C+Baltimore%2C+MD" class="se-map-block-d-i-get-direction">Get Directions from Google</a>
         </div>
       </div>
     </div>
