@@ -5036,6 +5036,9 @@ html, body {
 
 .md-local-nav {
   background-color: #e6e9ed; }
+  .md-local-nav a.active {
+    background-color: #7fb4f8 !important;
+    color: #FFF; }
   .md-local-nav a:hover {
     background-color: #5d9cec !important;
     color: #FFF; }

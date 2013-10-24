@@ -1,6 +1,10 @@
 .md-local-nav {
   background-color: $gray2;
   a {
+    &.active {
+      background-color: saturate(lighten($blue, 9), 10) !important;
+      color: #FFF;
+    }
     &:hover {
       background-color: $blue !important;
       color: #FFF;
